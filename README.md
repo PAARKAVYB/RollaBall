@@ -1,9 +1,8 @@
-# RollaBall
+# ROLL A BALL
+## AIM:
+To Roll a Ball using C# program in unity.
 
-## Aim:
-
-## Algorithm:
-
+## ALGORITHM:
 1. File -> Scene -> Select the scene -> Save as-> New folder(Scenes)-> File name (MiniGame)
 
 2. Heirarchy -> 3D Object-> Plane 
@@ -35,15 +34,71 @@ Metallic map-> 0
 Smoothness -> 0.75
 Drag the Sphere material to the ball and release the mouse
 
- 7. Hierarchy -> Player-> Inspector ->Add component-> Rigidbody
+7. Hierarchy -> Player-> Inspector ->Add component-> Rigidbody
 
 8. Create a new script -> Create a folder in project (Name: Scripts)
 Hierarchy -> Player -> Inspector-> AddComponent-> NewScripts-> PlayerController( Click create and Add)
 Copy the PlayerController and drag to Script folder
 Double click the PlayerController file and type the coding
 
-## Program:
+## PROGRAM:
+```
+NAME : PAARKAVY B
+REG NO : 212221230072
+```
 
-## Output:
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-## Result:
+public class Program : MonoBehaviour
+{
+    public float Xforce = 5.0f;
+    public float Zforce = 5.0f;
+    public float Yforce = 300f;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        float x = 0.0f;
+        float y = 0.0f;
+        float z = 0.0f;
+        if (Input.GetKey(KeyCode.A))
+        {
+            x = x - Xforce;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            x = x + Xforce;
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            z = z + Zforce;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            z = z - Zforce;
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            y = Yforce;
+        }
+        GetComponent<Rigidbody>().AddForce(x, y, z);
+
+    }
+}
+```
+
+## OUTPUT:
+![output](op1.png)
+
+![output](op2.png)
+
+## RESULT:
+Thus,the 3D application for Roll the Ball objects in unity is developed successfully.
