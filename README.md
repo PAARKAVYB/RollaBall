@@ -26,11 +26,11 @@ Transform -> Position -> y=0.5]
 Inspector ->Surface Inputs ->BaseMap (Choose the color)
 Metallic map-> 0
 Smoothness -> 0.25
-Drag the Background to the plane and release the mouse
+Drag the Background to the plane and release the mouse.
 
-Material folder -> Create -> Material (Name: Sphere)
+    Material folder -> Create -> Material (Name: Sphere)
 Inspector ->Surface Inputs ->BaseMap (Choose the color)
-Metallic map-> 0
+    Metallic map-> 0
 Smoothness -> 0.75
 Drag the Sphere material to the ball and release the mouse
 
