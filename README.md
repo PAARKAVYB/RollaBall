@@ -32,7 +32,7 @@ Drag the Background to the plane and release the mouse.
 Inspector ->Surface Inputs ->BaseMap (Choose the color)
     Metallic map-> 0
 Smoothness -> 0.75
-Drag the Sphere material to the ball and release the mouse
+Drag the Sphere material to the ball and release the mouse.
 
 7. Hierarchy -> Player-> Inspector ->Add component-> Rigidbody.
 
