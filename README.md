@@ -34,12 +34,12 @@ Metallic map-> 0
 Smoothness -> 0.75
 Drag the Sphere material to the ball and release the mouse
 
-7. Hierarchy -> Player-> Inspector ->Add component-> Rigidbody
+7. Hierarchy -> Player-> Inspector ->Add component-> Rigidbody.
 
 8. Create a new script -> Create a folder in project (Name: Scripts)
 Hierarchy -> Player -> Inspector-> AddComponent-> NewScripts-> PlayerController( Click create and Add)
 Copy the PlayerController and drag to Script folder
-Double click the PlayerController file and type the coding
+Double click the PlayerController file and type the coding.
 
 ## PROGRAM:
 ```
